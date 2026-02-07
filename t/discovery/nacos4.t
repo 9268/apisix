@@ -93,6 +93,8 @@ qr/failed to fetch nacos registry from all hosts/
 --- yaml_config eval: $::yaml_config
 --- extra_yaml_config
 # override discovery host to real nacos server for this test
+apisix:
+  enable_admin: true
 discovery:
   nacos:
     host:
